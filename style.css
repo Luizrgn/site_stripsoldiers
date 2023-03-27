@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background: linear-gradient(68.15deg, #3262e6 16.62%, #0f0968 85.61%);
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: space-between;
+  padding: 24px;
+  background: #192952;
+}
+
+.cabecalho-imagem {
+  height: 38px;
+  margin-left: 25px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 28px;
+  margin-right: 35px;
+}
+
+.cabecalho-menu-item {
+  font-family: 'Oswald', sans-serif;
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 18px
+}
+
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid whitesmoke;
+ /* boas praticas para delimitar uma interface ou layout do site com limites de tamanho e margem
+  width: 1200px;
+  margin: -20px 10px 10px 10px; */
+
+}
+
+.conteudo-principal { /* conteudo pagina home imagem album diana */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-principal-imagem { /* conteudo pagina home imagem album diana */
+    box-shadow: 8px 8px 25px black;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    align-self: flex-end;
+    margin: 35px;
+    height: 600px;
+}
+
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid whitesmoke;
+    background: #192952;
+}
+/*
+.rodape-imagem {
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  
+}*/
+
+.botoes-rodape {
+  margin-right: 25px;
+  background-color: aliceblue;
+
+}
+/* codigo de icones redes sociais rodapé 
+.icon{
+  width: 100%;
+}
+
+.btn{
+  display: flex;
+  flex-direction: row;
+  width: 30px;
+  height: 30px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  position: relative; 
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #1abc9c;
+  overflow: hidden;
+}
+.btn i{
+  line-height: 90px;
+  font-size: 25px;
+  transition: 0.2s linear;
+}
+.btn:hover i{
+  transform: scale(1.4);
+  color: #f1f1f1;
+}
+.btn::before{
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+  background: #1abc9c;   
+}
+.btn:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa{
+  0%{
+     left: -110%;
+     top: 90%;
+  }50%{
+      left: 10%;
+      top: -30%;
+  }
+  100%{
+       top: -10%;
+       left: -10%;
+  }
+} */
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#192952; 
+}
+.botao{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.btn{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #19127a;
+  margin: 10px;
+  border-radius: 30%;
+  position: relative; 
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3262e6;
+  overflow: hidden;
+}
+.btn i{ /*onde modifico os parametro de animação dos icones e posição e tamanho dentro do display botão = .btn*/
+  margin: 12px ;
+  line-height: 18px;
+  font-size: 18px;
+  transition: 0.2s linear;
+}
+.btn:hover i{
+  transform: scale(1.4);
+  color: #f1f1f1;
+}
+.btn::before{
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+  background: #3262e6;   
+}
+.btn:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa{
+  0%{
+     left: -110%;
+     top: 90%;
+  }50%{
+      left: 10%;
+      top: -30%;
+  }
+  100%{
+       top: -10%;
+       left: -10%;
+  }
+}
+
+.menu-navegacao-media{
+  display: inline-flex;
+  gap: 25px;
+  margin-left: 325px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  
+}  
+ 
+.menu-navegacao-media-item{
+  
+  border-radius: 10px;
+  background-color: #192952;
+  color: whitesmoke; /* cor do texto do menu photo e video */
+  border: none;
+  padding: 5px 22px;
+  text-align: center;
+  
+}
+
+.subtitulos-media{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 255px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.galeriafotos1{
+  margin-left: 200px;
+  margin-top: 40px;
+  margin-bottom: -120px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 10vw);
+  gap: 95px;
+  
+
+}
+
+.galeriafotos2{
+  margin-left: 200px;
+  margin-bottom: -130px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 10vw);
+  gap: 95px;
+  
+
+}
+
+.galeria_img{
+  width: 150%;
+  height: 150%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.galeria img{
+  width: 150%;
+  display: block;
+}
+
+.galeria:target{
+  position: fixed;
+  width: 40%;
+  top: 145px;
+  left: 25%;
+  padding: 10px 206px 10px 10px;
+  border: solid 1px whitesmoke;
+  box-shadow: 0 0 25px 10px #000;
+  border-radius: 5px;
+  background: linear-gradient(68.15deg, #0f0968 16.62%, #3262e6 85.61%);
+}
+
+.galeria:target .detalhes{
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  color: whitesmoke;
+
+}
+
+.detalhes{
+  display: none;
+}
+
+ul{
+  width: 880px;
+  list-style: none;
+  display: flex;
+  margin: 100px auto;
+}
+
+.min{
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.lbox{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.lbox:target{
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  max-width: 10%;
+  max-height: 10%;
+  top: 0;
+  left: 0;
+  background: rgba(10, 10, 10, .7);
+
+  position: fixed;
+}
+
+.box_img{
+  width: 1000px;
+  margin: 150px auto;
+}
+
+.btn-galeria{
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#prev{
+  left: 5%;
+  top: 45%;
+}
+
+#next{
+  right: 5%;
+  top: 45%;
+}
+
+#close{
+  right: 2%;
+  top: 0;
+}
+
+
+.player-video-principal{
+  border-radius: 12px;
+  margin: 25px 100px 10px 200px;
+}
+
+.titulo-theband{
+  margin: 20px auto 0px auto;
+  width: 600px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.texto-theband{
+  margin: 50px auto 0px auto;
+  width: 600px;
+  text-align: justify;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 150;
+  font-size: 18px;
+  color: whitesmoke;
+}
+  
+
+
+
+
+
+  
